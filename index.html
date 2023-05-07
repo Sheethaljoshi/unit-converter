@@ -8,13 +8,80 @@
 </head>
 <body>
     <section id="home">
-        <h1><b>Unit Conversions</b></h1>
+        <h1 id="mainheading"><b>Unit Conversions</b></h1>
         <nav>
-           <a href="#Temperature"><button>Temperature</button></a>
-           <br><a href="#Weight"><button>Weight</button></a>
+           <a href="#Temperature"><button>Temperature</button></a><br>
+           <br><a href="#Weight"><button>Weight</button></a><br>
            <br><a href="#Distance"><button>Distance</button></a>
         </nav>
     </section>
+    <div id="all-conversions">
+        <section id="Temperature">
+            <div id="tmp">
+                <figure>
+                    <img src="../unit-converter/images/temp.jpg.png" width="200px" alt="Temperature">
+                    <figcaption>Celcius to Farenheit conversion</figcaption>
+                </figure>
+                <article>
+                    <fieldset>
+                        <legend><h1>Temperature</h1></legend>
+                        <label for="Temperature">Celcius</label> <br/>
+                        <input type="number" id="c"> <br/>
+                       <br> <button id="temperaturec">Convert</button> <br>
+                        <br><label for="Temperature">Farenheit</label> <br/>
+                        <input type="number" id="f"> <br/>
+                    </fieldset>
+                    <br>
+                    <aside>
+                        To convert celsuis to fahrenheit yourself, use this formula replacing the `C` with your temperature in celsuis: (C × 9/5) + 32
+                      </aside>
+                </article>
+            </div>
+
+        </section>
+        <section id="Weight">
+            <figure>
+                <img src="../unit-converter/images/weight.png" width="200px" alt="Kilogram">
+                <figcaption> Kilogram to Pound conversion</figcaption>
+            </figure>
+            <article>
+                <fieldset>
+                    <legend><h1>Weight</h1></legend>
+            
+                    <label for="Kilogram">Kilogram</label><br>
+                    <input type="number" id="kg"><br>
+                    <br><button id="weightc">Convert</button><br>
+                    <br><label for="Pound">Pound</label><br>
+                    <input type="number" id="lb">
+                </fieldset>
+            </article>
+            <br><aside>
+                To convert kilograms to pounds yourself, use this formula replacing the `kg` with your weight in kilograms: kg x 2.205
+            </aside>
+
+        </section>
+        <section id="Distance">
+            <figure>
+                <img src="../unit-converter/images/speedo.png" width="200px" alt="length">
+                <figcaption> Kilometer to Mile conversion</figcaption>
+            </figure>
+            <article>
+                <fieldset>
+                    <legend><h1>Weight</h1></legend>
+            
+                    <label for="Kilogram">Kilometer</label><br>
+                    <input type="number" id="km"><br>
+                    <br><button id="weightc">Convert</button><br>
+                    <br><label for="Pound">Mile</label><br>
+                    <input type="number" id="ml">
+                </fieldset>
+            </article>
+            <br><aside>
+                To convert kilometers to miles yourself, use this formula replacing the `km` with your distance in kilmeters: km &divide; 1.609
+            </aside>
+
+        </section>
+    </div>
 
     
 </body>

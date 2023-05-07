@@ -1,0 +1,89 @@
+*{
+    margin: 10px;
+    
+}
+body{
+    background-color: whitesmoke;
+}
+
+#home {
+    background-color:  #483355;
+    padding-bottom: 1cm;
+    margin-left:-1cm;
+    margin-right:-1cm;
+    margin-top:-1cm;
+    padding-top: 2cm;
+    padding-bottom: 2cm;
+   }
+   header {
+    font-size: 40px;
+    color: rgb(240, 234, 245);
+    float: left;
+    padding-left: 2cm;
+    
+  }
+  .topdiv {
+    float: right;
+    padding-right: 1cm;
+    
+  }
+  .topmenu{
+    color: white;
+    background-color: rgb(103, 4, 153);
+    margin: 10px;
+    font-size: 20px;
+    border-radius: 1mm;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .topmenu:hover {
+    color: white;
+    background-color: #382742;
+    text-decoration: underline;
+  }
+  #all-conversions{
+    display: grid;
+    justify-content: center;
+  }
+  figure {
+    float: left;
+    justify-self: auto;
+    width: 200px;
+}
+figcaption{
+    color: black;
+    font-size: 17px;
+    text-align: center;
+}
+#weightc, #distancec, #temperaturec{
+    font-size: 20px;
+    border: transparent;
+    background-color: rgb(173, 218, 173);
+    border-radius: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: fit-content;
+}
+#weightc, #distancec, #temperaturec:hover {
+    cursor: pointer;
+}
+.b{
+    border-top-style: solid;
+    background-color: white;
+    border-top-width: 20px;
+    width: 900px;
+    height: 600px;
+    border-radius: 10px;
+    margin-bottom: 0px;
+    margin-top: 25px;
+    margin-left: 3cm;
+    font-size: larger;
+}
+.temperature{
+    border-top-color: green;
+}
+.weight{
+    border-top-color: coral;
+}
+.distance{
+    border-top-color: cyan;
+}

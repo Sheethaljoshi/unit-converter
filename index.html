@@ -5,30 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unit Converter</title>
+    <head> 
+        <link rel="stylesheet" href="style.css">
+    </head>
 </head>
 <body>
     <section id="home">
-        <h1 id="mainheading"><b>Unit Conversions</b></h1>
-        <nav>
-           <a href="#Temperature"><button>Temperature</button></a><br>
-           <br><a href="#Weight"><button>Weight</button></a><br>
-           <br><a href="#Distance"><button>Distance</button></a>
+        <header>Unit Conversions</header>
+        <nav class="topdiv">
+            <div>
+             <a href="#Temperature"><button class="topmenu">Temperature</button></a>
+             <a href="#Weight"><button class="topmenu">Weight</button></a>
+             <a href="#Distance"><button class="topmenu">Distance</button></a>
+           </div>
         </nav>
     </section>
     <div id="all-conversions">
         <section id="Temperature">
-            <div id="tmp">
+            <div class="b temperature">
                 <figure>
                     <img src="../unit-converter/images/temp.jpg.png" width="200px" alt="Temperature">
                     <figcaption>Celcius to Farenheit conversion</figcaption>
                 </figure>
                 <article>
-                    <fieldset>
-                        <legend><h1>Temperature</h1></legend>
-                        <label for="Temperature">Celcius</label> <br/>
+                    <fieldset id="te">
+                        <legend ><h1>Temperature</h1></legend>
+                        <label for="Temperature">Celcius:</label>
                         <input type="number" id="c"> <br/>
-                       <br> <button id="temperaturec">Convert</button> <br>
-                        <br><label for="Temperature">Farenheit</label> <br/>
+                       <button id="temperaturec">Convert</button> <br>
+                        <label for="Temperature">Farenheit:</label>
                         <input type="number" id="f"> <br/>
                     </fieldset>
                     <br>
@@ -40,46 +45,47 @@
 
         </section>
         <section id="Weight">
-            <figure>
+            <div class="b weight">
+                <figure>
                 <img src="../unit-converter/images/weight.png" width="200px" alt="Kilogram">
                 <figcaption> Kilogram to Pound conversion</figcaption>
-            </figure>
+                </figure>
             <article>
-                <fieldset>
+                <fieldset id="we">
                     <legend><h1>Weight</h1></legend>
             
-                    <label for="Kilogram">Kilogram</label><br>
+                    <label for="Kilogram">Kilogram:</label>
                     <input type="number" id="kg"><br>
-                    <br><button id="weightc">Convert</button><br>
-                    <br><label for="Pound">Pound</label><br>
+                    <button id="weightc">Convert</button> <br>
+                    <label for="Pound">Pound:</label>
                     <input type="number" id="lb">
                 </fieldset>
-            </article>
-            <br><aside>
+                <br><aside>
                 To convert kilograms to pounds yourself, use this formula replacing the `kg` with your weight in kilograms: kg x 2.205
-            </aside>
-
+                </aside>
+            </article>
+            </div>
         </section>
         <section id="Distance">
+            <div class="b distance">
             <figure>
                 <img src="../unit-converter/images/speedo.png" width="200px" alt="length">
                 <figcaption> Kilometer to Mile conversion</figcaption>
             </figure>
-            <article>
-                <fieldset>
-                    <legend><h1>Weight</h1></legend>
-            
-                    <label for="Kilogram">Kilometer</label><br>
+            <article >
+                <fieldset id="di">
+                    <legend><h1>Distance</h1></legend>
+                    <label for="Kilometer">Kilometer:</label>
                     <input type="number" id="km"><br>
-                    <br><button id="weightc">Convert</button><br>
-                    <br><label for="Pound">Mile</label><br>
+                    <button id="distancec">Convert</button><br>
+                    <label for="Mile">Mile:</label>
                     <input type="number" id="ml">
                 </fieldset>
             </article>
             <br><aside>
-                To convert kilometers to miles yourself, use this formula replacing the `km` with your distance in kilmeters: km &divide; 1.609
+                To convert kilometers to miles yourself, use this formula replacing the `km` with your distance in kilmeters: km and divide 1.609
             </aside>
-
+            </div>
         </section>
     </div>
 
